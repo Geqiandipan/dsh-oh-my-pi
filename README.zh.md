@@ -56,10 +56,14 @@ bundle 的默认值不需要任何本地路径：provider 直接从宿主 `PATH`
   name: 'dsh-oh-my-pi'
   config:
     providerName: omp
-    cliPath: 'C:\Users\you\.dsh\tools\pi\node_modules\@earendil-works\pi-coding-agent\dist\cli.js'
-    model: 'minimax-cn/MiniMax-M3'
-    thinkingLevel: high
-    apiKeyEnv: MINIMAX_CN_API_KEY
+    timeoutMs: 900000
+    disposeGraceMs: 3000
+    # 下面每个字段都是可选的：按需取消注释并填你自己的值，
+    # 安装插件本身不需要它们中的任何一个。
+    # cliPath: '<pi CLI 的绝对路径>'
+    # model: '<provider>/<model>'
+    # thinkingLevel: '<off|minimal|low|medium|high|xhigh|max>'
+    # apiKeyEnv: '<凭据名>'
 ```
 
 | 字段 | 默认值 | 含义 |

@@ -58,10 +58,14 @@ host `PATH`. Change them in your profile's `cordis.patch.yml`:
   name: 'dsh-oh-my-pi'
   config:
     providerName: omp
-    cliPath: 'C:\Users\you\.dsh\tools\pi\node_modules\@earendil-works\pi-coding-agent\dist\cli.js'
-    model: 'minimax-cn/MiniMax-M3'
-    thinkingLevel: high
-    apiKeyEnv: MINIMAX_CN_API_KEY
+    timeoutMs: 900000
+    disposeGraceMs: 3000
+    # Every field below is optional. Uncomment the ones you need and fill in
+    # your own values; none of them is required to install the plugin.
+    # cliPath: '<absolute path to the pi CLI>'
+    # model: '<provider>/<model>'
+    # thinkingLevel: '<off|minimal|low|medium|high|xhigh|max>'
+    # apiKeyEnv: '<credential name>'
 ```
 
 | Field | Default | Meaning |

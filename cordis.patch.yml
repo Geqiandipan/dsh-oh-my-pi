@@ -13,6 +13,12 @@
         command: pi
         timeoutMs: 900000
         disposeGraceMs: 3000
+        # Optional overrides. Uncomment and fill in your own values in your
+        # own profile patch; none of them is required.
+        # cliPath: '<absolute path to the pi CLI>'
+        # model: '<provider>/<model>'
+        # thinkingLevel: '<off|minimal|low|medium|high|xhigh|max>'
+        # apiKeyEnv: '<credential name>'
     - id: tool-subagent-oh-my-pi
       name: '@deepseek-ai/dsh-tool-subagent'
       config:

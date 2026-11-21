@@ -95,12 +95,13 @@ lives elsewhere overrides the row in the profile's `cordis.patch.yml`:
   name: 'dsh-oh-my-pi'
   config:
     providerName: omp
-    cliPath: 'C:\Users\you\.dsh\tools\pi\node_modules\@earendil-works\pi-coding-agent\dist\cli.js'
-    model: 'minimax-cn/MiniMax-M3'
-    thinkingLevel: high
-    apiKeyEnv: MINIMAX_CN_API_KEY
     timeoutMs: 900000
     disposeGraceMs: 3000
+    # Optional overrides, filled in per machine.
+    # cliPath: '<absolute path to the pi CLI>'
+    # model: '<provider>/<model>'
+    # thinkingLevel: '<off|minimal|low|medium|high|xhigh|max>'
+    # apiKeyEnv: '<credential name>'
 ```
 
 `apiKeyEnv` names a credential in the Harness credential store; the provider
