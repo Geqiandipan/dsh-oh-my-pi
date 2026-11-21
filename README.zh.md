@@ -40,7 +40,7 @@ dsh plugin --profile <profile> add dsh-oh-my-pi
 从源码：
 
 ```sh
-dsh plugin --profile <profile> add github:OWNER/dsh-oh-my-pi
+dsh plugin --profile <profile> add github:Geqiandipan/dsh-oh-my-pi
 ```
 
 若安装器提示需要重启，重启宿主即可。**OMP** 入口会出现在左侧栏，

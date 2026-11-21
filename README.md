@@ -42,7 +42,7 @@ dsh plugin --profile <profile> add dsh-oh-my-pi
 From source:
 
 ```sh
-dsh plugin --profile <profile> add github:OWNER/dsh-oh-my-pi
+dsh plugin --profile <profile> add github:Geqiandipan/dsh-oh-my-pi
 ```
 
 Then restart the host if the installer asks for it. The **OMP** entry appears
