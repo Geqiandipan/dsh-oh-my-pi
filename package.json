@@ -1,0 +1,72 @@
+{
+  "name": "dsh-oh-my-pi",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Delegate DeepSeek Harness tasks to the local oh-my-pi coding agent, with an OMP entry in the left sidebar that shows the provider's configuration and every finished run.",
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "subagent",
+    "oh-my-pi",
+    "omp",
+    "delegation",
+    "sidebar"
+  ],
+  "homepage": "https://github.com/OWNER/dsh-oh-my-pi#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-oh-my-pi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/dsh-oh-my-pi.git"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "assets/icon-180.png",
+    "LICENSE",
+    "README.md",
+    "README.zh.md"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.2-rc.5 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tool-subagent": ">=0.2.2-rc.5 <0.2.3 || >=0.2.3-rc.1 <0.3.0-0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tool-subagent": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "icon": "./icon.svg"
+}

@@ -1,0 +1,21 @@
+# Profile layer of the dsh-oh-my-pi bundle.
+#
+# `subagent-oh-my-pi` registers the one-shot provider on `ctx.subagents`;
+# `tool-subagent-oh-my-pi` exposes it to every Agent as the `subagent_omp`
+# tool. The defaults below need no local paths: the provider runs `pi` from
+# the host PATH. Override them in your own profile patch (cordis.patch.yml)
+# when your oh-my-pi installation or model route lives elsewhere.
+- insert:
+    - id: subagent-oh-my-pi
+      name: 'dsh-oh-my-pi'
+      config:
+        providerName: omp
+        command: pi
+        timeoutMs: 900000
+        disposeGraceMs: 3000
+    - id: tool-subagent-oh-my-pi
+      name: '@deepseek-ai/dsh-tool-subagent'
+      config:
+        provider: omp
+        toolName: subagent_omp
+        maxDepth: provider-managed

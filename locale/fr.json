@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sous-agent OMP",
+    "description": "Déléguez une tâche à l’agent de code oh-my-pi local. L’entrée OMP de la barre latérale gauche ouvre une page qui présente la configuration du fournisseur, son environnement d’exécution et les exécutions terminées ; l’outil subagent_omp lance une session oh-my-pi non surveillée dans l’espace de travail courant et ne renvoie que sa réponse finale. Le plugin n’installe pas oh-my-pi : le CLI pi et son extension oh-my-pi doivent déjà être présents, et la clé d’API nommée par apiKeyEnv est lue dans le magasin d’identifiants de Harness. Désactiver le bundle retire l’outil et l’entrée de la barre latérale."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OMP subagent",
+    "description": "Delegate a task to the local oh-my-pi coding agent. The OMP entry in the left sidebar opens a page with the provider's configuration, its runtime, and the runs it has finished; the subagent_omp tool starts one unattended oh-my-pi session in the current workspace and returns only its final answer. The plugin does not install oh-my-pi: the pi CLI and its oh-my-pi extension must already be present, and the API key named by apiKeyEnv is read from the Harness credential store. Turning the bundle off removes the tool and the sidebar entry."
+  }
+}

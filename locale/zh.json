@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OMP 子代理",
+    "description": "把任务委派给本地的 oh-my-pi 编码代理。左侧边栏的 OMP 入口会打开一个页面，显示该提供方的配置、运行环境以及已完成的运行记录；subagent_omp 工具会在当前工作区里启动一次无人值守的 oh-my-pi 会话，并只返回它的最终答案。本插件不会安装 oh-my-pi：pi CLI 与其 oh-my-pi 扩展必须已经存在，apiKeyEnv 指定的 API 密钥从 Harness 凭据库读取。关闭该插件会同时移除这个工具和侧边栏入口。"
+  }
+}
